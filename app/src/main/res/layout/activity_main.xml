@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/d2"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/rect"
+        android:layout_height="300dp"/>
+
+    <TextView
+        android:id="@+id/display_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_orange_dark"
+        android:text=""
+        android:background="@drawable/rect"
+        android:layout_below="@+id/image_view"
+        android:layout_margin="20dp"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/capimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capture \nimage"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:background="@android:color/white"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:layout_below="@+id/display_txt"/>
+
+    <Button
+        android:id="@+id/detectxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:text="Detect \nText"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:textSize="25dp"
+        android:layout_marginLeft="210dp"
+        android:layout_below="@+id/display_txt"/>
+
+
+
+</RelativeLayout>
