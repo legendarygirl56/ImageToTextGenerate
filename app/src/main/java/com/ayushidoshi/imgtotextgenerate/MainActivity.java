@@ -118,11 +118,13 @@ public class MainActivity extends AppCompatActivity {
         }
         else
         {
+            String text="";
             for(FirebaseVisionText.Block block: firebaseVisionText.getBlocks())
             {
-                String text=block.getText();
-                tv.setText(text);
+                text+=block.getText();
+                text+="\n";
             }
+            tv.setText(text);
         }
     }
 }
